@@ -1,0 +1,7 @@
+CREATE TABLE review (
+    id SERIAL PRIMARY KEY,
+    name VARCHAR(255) NOT NULL,
+    phone_number VARCHAR(255) NOT NULL,
+    car_id INTEGER NOT NULL REFERENCES car(id) ON DELETE RESTRICT,
+    time TIME NOT NULL
+);
