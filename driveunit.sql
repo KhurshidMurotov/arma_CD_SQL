@@ -1,0 +1,5 @@
+CREATE TABLE drive_unit (
+    id SERIAL PRIMARY KEY,
+    order INTEGER DEFAULT 0,
+    name VARCHAR(255) NOT NULL
+);
