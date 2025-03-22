@@ -1,0 +1,2 @@
+INSERT INTO car (order, brand_id, name, manufacture_year, price, engine_type_id, acceleration, power_reserver_from, power_reserver_to, length, width, height, num_of_places, max_speed, drive_unit_id, battery_capacity, charging_speed, speed_in, desc_1, desc_2, is_featured, status, date) 
+VALUES (1, 1, 'Toyota Prius', 2022, 25000, 1, 9.8, 500, 600, 4.6, 1.8, 1.5, 5, 180, 1, 45.0, 2.5, 'hours', 'Hybrid sedan', 'Eco-friendly car', TRUE, 'active', NOW());
