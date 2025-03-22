@@ -1,3 +1,3 @@
-UPDATE brand 
-SET status = 'deactive' 
-WHERE name = 'Toyota';
+UPDATE car 
+SET desc_1 = 'Updated hybrid sedan description' 
+WHERE id = 1;
