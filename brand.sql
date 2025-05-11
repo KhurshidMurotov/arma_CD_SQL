@@ -1,8 +1,11 @@
 CREATE TABLE brand (
     id SERIAL PRIMARY KEY,
-    order INTEGER DEFAULT 0,
+    "order" SMALLINT DEFAULT 0,
     name VARCHAR(255) NOT NULL,
     logo VARCHAR(255) NOT NULL,
-    zoom FLOAT DEFAULT 1,
-    status VARCHAR(255) CHECK (status IN ('active', 'deactive'))
+    zoom DECIMAL(3,2) DEFAULT 1.00,
+    status ENUM('active', 'deactive') NOT NULL,
+    CONSTRAINT status_check CHECK (status IN ('active', 'deactive'))
 );
+
+CREATE INDEX idx_brand_status ON brand (status);
